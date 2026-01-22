@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+bradesco-bia.onrender.com	TRUE	/	FALSE	1999999999	CLIENTSESS	0c681d1181de16ba9f15b1424ae76962
+bradesco-bia.onrender.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+bradesco-bia.onrender.com	TRUE	/	FALSE	1999999999	identificador_cliente	10A7D469
+bradesco-bia.onrender.com	TRUE	/	FALSE	1999999999	PHPSESSID	844396774b8384fb6898f96030dfb260
+

